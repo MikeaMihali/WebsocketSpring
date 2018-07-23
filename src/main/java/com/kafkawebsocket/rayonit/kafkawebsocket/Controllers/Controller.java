@@ -64,8 +64,8 @@ public class Controller {
                             @RequestParam(name = "maxLat") Double maxLat ,
                             @RequestParam(name = "minLng") Double minLng ,
                             @RequestParam(name = "maxLng") Double maxLng ){
-        eventsRepository.deleteAll();
-        geoInfoRepository.deleteAll();
+//        eventsRepository.deleteAll();
+//        geoInfoRepository.deleteAll();
       double[] southWest={minLat,minLng};
       double[] northEast={maxLat,maxLng};
       Box bounds=new Box(northEast,southWest);
