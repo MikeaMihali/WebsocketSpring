@@ -15,7 +15,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 
         //ku do te behet connect websocket ne fillim
         stompEndpointRegistry.addEndpoint("/websocket-connect")
-                .setAllowedOrigins("*")
+                .setAllowedOrigins("http://localhost:4200")
                 .withSockJS();
     }
 
