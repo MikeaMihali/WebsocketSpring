@@ -19,7 +19,8 @@ function connect() {
         setConnected(true);
         console.log('Connected: ' + frame);
         stompClient.subscribe('/events', function (greeting) {
-            showGreeting(JSON.parse(greeting.body).content);
+            // console.log(greeting.body);
+            showGreeting(greeting.body);
         });
     });
 }
